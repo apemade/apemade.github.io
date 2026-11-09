@@ -4,28 +4,93 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Ape Made Games</title>
-<meta name="description" content="Ape Made Games – casual mobile games.">
-<style>
-  :root { --bg:#FFF8E1; --ink:#3E2723; --muted:#6D4C41; --accent:#43A047; --card:#ffffff; }
-  @media (prefers-color-scheme: dark) { :root { --bg:#1d1714; --ink:#f3e9e2; --muted:#c9b4a8; --accent:#7bd17f; --card:#26201c; } }
-  body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
-  main { max-width:760px; margin:0 auto; padding:48px 16px; }
-  h1 { margin:0 0 4px; }
-  .muted { color:var(--muted); margin-top:0; }
-  .card { background:var(--card); border-radius:14px; padding:16px 20px; box-shadow:0 1px 3px rgba(0,0,0,.08); margin-top:24px; }
-  a { color:var(--accent); }
-</style>
+<meta name="description" content="Ape Made Games makes cosy, juicy casual games. Play Dino Merge: hatch eggs, merge dinosaurs and defend them from meteors.">
+<meta property="og:title" content="Ape Made Games">
+<meta property="og:description" content="Cosy, juicy casual games. Meet Dino Merge.">
+<meta property="og:image" content="https://apemade.github.io/assets/dino-merge-icon.webp">
+<link rel="icon" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
-<main>
-  <h1>Ape Made Games</h1>
-  <p class="muted">Casual mobile games.</p>
-  <div class="card">
-    <h2 style="margin-top:0">Dino Merge</h2>
-    <p>Hatch eggs, merge dinosaurs and defend them from meteors.</p>
-    <p><a href="dino-merge/privacy/">Privacy policy</a></p>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="./" aria-label="Ape Made Games home">
+      <span class="brand-mark" aria-hidden="true">AM</span>
+      <span class="brand-name">Ape Made Games</span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#games">Games</a>
+      <a href="dino-merge/privacy/">Privacy</a>
+    </nav>
   </div>
-  <p class="muted" style="margin-top:32px">Contact: <a href="mailto:apemakesgames@gmail.com">apemakesgames@gmail.com</a></p>
+</header>
+
+<section class="sky">
+  <div class="wrap hero">
+    <h1 class="display">Small games,<br>big smiles.</h1>
+    <p>Ape Made Games builds cosy, juicy casual games you can play one tap at a time.</p>
+  </div>
+</section>
+
+<main class="feature" id="games">
+  <div class="wrap">
+    <article class="game">
+      <div>
+        <div class="game-head">
+          <img class="game-icon" src="assets/dino-merge-icon.webp" width="96" height="96" alt="Dino Merge app icon">
+          <div>
+            <span class="tag">Our game</span>
+            <h2 class="display">Dino Merge</h2>
+          </div>
+        </div>
+        <p class="lede">Hatch eggs, merge baby dinos into mighty ones, and arm your herd to blast falling meteors out of the sky.</p>
+        <ul class="pills">
+          <li>
+            <span class="dot" style="background:#ffe082" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="20" height="20"><ellipse cx="12" cy="13" rx="7" ry="9" fill="#f5e6c8" stroke="#3e2723" stroke-width="2"/><path d="M8 11l2 2 2-3 2 3 2-2" fill="none" stroke="#3e2723" stroke-width="1.6" stroke-linejoin="round"/></svg>
+            </span>
+            <div><b>Hatch</b><span>Crack open eggs and discover new species.</span></div>
+          </li>
+          <li>
+            <span class="dot" style="background:#a5d6a7" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="20" height="20"><path d="M5 12h10M11 7l5 5-5 5" fill="none" stroke="#3e2723" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="19" cy="12" r="2" fill="#3e2723"/></svg>
+            </span>
+            <div><b>Merge</b><span>Drag two matching dinos together to evolve them.</span></div>
+          </li>
+          <li>
+            <span class="dot" style="background:#ffab91" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="20" height="20"><circle cx="13" cy="13" r="6" fill="#8d6e63" stroke="#3e2723" stroke-width="2"/><path d="M3 3l5 5M6 2l3 4M2 6l4 3" stroke="#ff7043" stroke-width="2" stroke-linecap="round"/></svg>
+            </span>
+            <div><b>Defend</b><span>Mount cannons on your herd and stop the meteors.</span></div>
+          </li>
+        </ul>
+        <div class="cta-row">
+          <span class="btn soon" aria-disabled="true">
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M4 3l13 9-13 9z" fill="#fff"/></svg>
+            Coming soon to Google Play
+          </span>
+          <a class="btn-link" href="dino-merge/privacy/">Privacy policy</a>
+        </div>
+      </div>
+      <div class="phone">
+        <img src="assets/dino-merge-screen.webp" width="420" height="916" loading="lazy"
+             alt="Dino Merge gameplay: dinosaurs with cannons in nests, eggs on the sand, a meteor falling from the sky">
+      </div>
+    </article>
+  </div>
 </main>
+
+<footer class="foot">
+  <div class="wrap">
+    <span>&copy; 2026 Ape Made Games</span>
+    <span class="links">
+      <a href="dino-merge/privacy/">Dino Merge privacy</a>
+      <a href="mailto:apemakesgames@gmail.com">apemakesgames@gmail.com</a>
+    </span>
+  </div>
+</footer>
+
 </body>
 </html>
